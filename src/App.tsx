@@ -24,8 +24,8 @@ const B = {
   navy:      '#0d1829',
 };
 
-const MAPS_URL = 'https://www.google.com/maps/place/The+Barber+shop+and+spa+-+Men/@26.240931,50.5435207,13z/data=!4m10!1m2!2m1!1sbarbershop+%23bahrain!3m6!1s0x3e49a50d347b9465:0x97ebfa25dcf386ff!8m2!3d26.2782808!4d50.5957885!15sChNiYXJiZXJzaG9wICNiYWhyYWluWhUiE2JhcmJlcnNob3AgI2JhaHJhaW6SAQNzcGGaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUklMVzlZVVRaQlJSQULgAQD6AQQIABBC!16s%2Fg%2F11pb19qrcl?entry=ttu';
-const WALINK = 'https://wa.me/97339777136';
+const MAPS_URL = 'https://www.google.com/maps/place/Salon+Shabab+Beirut+For+Men+%D8%B5%D8%A7%D9%84%D9%88%D9%86+%D8%B4%D8%A8%D8%A7%D8%A8+%D8%A8%D9%8A%D8%B1%D9%88%D8%AA+%D9%84%D9%84%D8%B1%D8%AC%D8%A7%D9%84%E2%80%AD/@25.3075588,51.4968253,15z/data=!4m10!1m2!2m1!1sqatar+barbershop!3m6!1s0x3e45db3c2c054bc1:0x4b6d084afc8e7b2!8m2!3d25.3075588!4d51.4968253!15sChBxYXRhciBiYXJiZXJzaG9wWhIiEHFhdGFyIGJhcmJlcnNob3CSAQtiYXJiZXJfc2hvcJoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydEtWVTV0VmtwUmJYQTFWSHBvZWxkc1NtbGFNVUo0V0ROd1QxWnRZeEFC4AEA-gEECAAQRA!16s%2Fg%2F11f_p2dgc5?entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D';
+const WALINK = 'https://wa.me/+97477671789';
 
 const SERVICES = [
   // Hair
@@ -56,13 +56,8 @@ const SERVICES = [
 ];
 
 const HOURS = [
-  { day: 'Monday',    hours: '10 AM – 10 PM' },
-  { day: 'Tuesday',   hours: '10 AM – 10 PM' },
-  { day: 'Wednesday', hours: '10 AM – 10 PM' },
-  { day: 'Thursday',  hours: '10 AM – 11 PM' },
-  { day: 'Friday',    hours: '10 AM – 11 PM' },
-  { day: 'Saturday',  hours: '10 AM – 10 PM' },
-  { day: 'Sunday',    hours: '10 AM – 10 PM' },
+  { day: 'Monday to Sunday',    hours: '24 Hours' },
+ 
 ];
 
 // ── Helper: try webp, fallback to jpg ──────────────────────────
@@ -115,7 +110,7 @@ function LoadingScreen({ isRTL }: { isRTL: boolean }) {
             <img src="/gallery/logo.webp" alt="Logo" className="w-44 h-44 object-contain"
               onError={e => {
                 const img = e.target as HTMLImageElement;
-                img.src = '/gallery/logoo.png';
+                img.src = '/gallery/logo.png';
                 img.onerror = () => { img.style.display = 'none'; };
               }} />
           </motion.div>
@@ -623,7 +618,7 @@ function GallerySection() {
 ══════════════════════════════════ */
 const REVIEWS_DATA = [
   { name: "Ahmed Al Dosari",    text: "Exceptional service from start to finish. The atmosphere is luxurious, the barbers are highly skilled, and the attention to detail is outstanding.", ar: "خدمة استثنائية من البداية للنهاية. الأجواء فاخرة والحلاقون ماهرون جداً والاهتمام بالتفاصيل رائع.", stars: 5, time: "2 months ago" },
-  { name: "Mohammed Al Khalifa", text: "One of the cleanest and most professional barber shops in Bahrain. Booking through WhatsApp was very easy and the haircut was perfect.", ar: "من أنظف وأكثر محلات الحلاقة احترافية في البحرين. الحجز عبر واتساب كان سهلاً جداً وقصة الشعر كانت مثالية.", stars: 5, time: "3 weeks ago" },
+  { name: "Mohammed Al Khalifa", text: "One of the cleanest and most professional barber shops in QATAR. Booking through WhatsApp was very easy and the haircut was perfect.", ar: "من أنظف وأكثر محلات الحلاقة احترافية في البحرين. الحجز عبر واتساب كان سهلاً جداً وقصة الشعر كانت مثالية.", stars: 5, time: "3 weeks ago" },
   { name: "Yousef Al Zayani",   text: "Honestly the best fade I've had in years. The team is respectful, fast, and very professional. Definitely coming back again.", ar: "صراحةً أفضل فيد حصلت عليه منذ سنوات. الفريق محترم وسريع ومهني جداً. سأعود حتماً.", stars: 5, time: "a month ago" },
   { name: "Khalid Al Mannai",   text: "Luxury atmosphere and excellent customer service. The barber understood exactly what I wanted and delivered beyond expectations.", ar: "أجواء فاخرة وخدمة عملاء ممتازة. الحلاق فهم بالضبط ما أريده وتجاوز التوقعات.", stars: 5, time: "2 weeks ago" },
   { name: "Omar Al Hayki",      text: "Very classy place with experienced barbers. Clean tools, modern style, and great hospitality. Highly recommended in Bahrain.", ar: "مكان راقي جداً مع حلاقين ذوي خبرة. أدوات نظيفة وأسلوب عصري وضيافة رائعة. أنصح به بشدة في البحرين.", stars: 5, time: "4 months ago" },
@@ -746,17 +741,17 @@ const INFO = {
   en: {
     address:  '📍 Alsayh Centre, Busaiteen — Bahrain\n\n' + MAPS_URL,
     phone:    '📞 +973 3977 7136\n💬 ' + WALINK,
-    hours:    '🕙 Mon–Wed, Sat–Sun\n    10 AM – 10 PM\n\n🕙 Thu–Fri\n    10 AM – 11 PM',
-    prices:   '✂️ Haircut 2.5  •  🪒 Beard 1.5  •  🚿 Wash 2 BD\n💨 Drying from 4  •  ✨ Protein from 15\n💎 Opti Smooth from 35  •  🎨 Dye from 8\n🖌️ Highlights from 18  •  🧴 Mask from 4\n\n💅 Manicure 3  •  🦶 Pedicure 4\n🛁 Spa Mani 4  •  🧖 Spa Pedi 5\n👑 Royal Mani 5  •  👑 Royal Pedi 6\n💆 Foot Massage 1\n\n✨ Facial 5  •  🌟 Pro Facial 8 BD',
+    hours:    '🕙 Mon – Sun\n    24 HOURS',
+    prices:   '✂️ Haircut 2.5  •  🪒 Beard 1.5  •  🚿 Wash 2 QAR\n💨 Drying from 4  •  ✨ Protein from 15\n💎 Opti Smooth from 35  •  🎨 Dye from 8\n🖌️ Highlights from 18  •  🧴 Mask from 4\n\n💅 Manicure 3  •  🦶 Pedicure 4\n🛁 Spa Mani 4  •  🧖 Spa Pedi 5\n👑 Royal Mani 5  •  👑 Royal Pedi 6\n💆 Foot Massage 1\n\n✨ Facial 5  •  🌟 Pro Facial 8 QAR',
     services: '✂️ Haircut  •  🪒 Beard Shave  •  🚿 Wash\n💨 Drying / Wavy  •  ✨ Protein\n💎 Opti Smooth  •  🎨 Dye  •  🖌️ Highlights\n\n💅 Manicure (Classic / Spa / Royal)\n🦶 Pedicure (Classic / Spa / Royal)\n💆 Foot Massage\n✨ Facial  •  🌟 Pro Facial',
-    book:     '📲 WhatsApp us to book:\n+973 3977 7136\n\n' + WALINK + '\n\n✅ Walk-ins welcome too!',
+    book:     '📲 WhatsApp us to book:\n+974 7767  1789\n\n' + WALINK + '\n\n✅ Walk-ins welcome too!',
     welcome:  'Hi! 👋 Welcome to The Barber Shop & Spa.\nTap below for instant info:',
   },
   ar: {
     address:  '📍 مركز الصايح، البسيتين — البحرين\n\n' + MAPS_URL,
-    phone:    '📞 97339777136+\n💬 ' + WALINK,
-    hours:    '🕙 الإثنين–الأربعاء، السبت–الأحد\n    10ص – 10م\n\n🕙 الخميس–الجمعة\n    10ص – 11م',
-    prices:   '✂️ قص 2.5  •  🪒 لحية 1.5  •  🚿 شاور 2 BD\n💨 ويفي من 4  •  ✨ بروتين من 15\n💎 أوبتي سموث من 35  •  🎨 صبغة من 8\n🖌️ هايلايت من 18  •  🧴 ماسك من 4\n\n💅 منكير 3  •  🦶 بدكير 4\n🛁 سبا منكير 4  •  🧖 سبا بدكير 5\n👑 رويال منكير 5  •  👑 رويال بدكير 6\n💆 مساج 1\n\n✨ فيشل 5  •  🌟 بروفيشنال 8 BD',
+    phone:    '📞+974 7767  1789\n💬 ' + WALINK,
+    hours:    '🕙 الإثنين – الأحد 24 H',
+    prices:   '✂️ قص 2.5  •  🪒 لحية 1.5  •  🚿 شاور 2 QAR\n💨 ويفي من 4  •  ✨ بروتين من 15\n💎 أوبتي سموث من 35  •  🎨 صبغة من 8\n🖌️ هايلايت من 18  •  🧴 ماسك من 4\n\n💅 منكير 3  •  🦶 بدكير 4\n🛁 سبا منكير 4  •  🧖 سبا بدكير 5\n👑 رويال منكير 5  •  👑 رويال بدكير 6\n💆 مساج 1\n\n✨ فيشل 5  •  🌟 بروفيشنال 8 QAR',
     services: '✂️ قص  •  🪒 حلاقة  •  🚿 شاور\n💨 ويفي  •  ✨ بروتين\n💎 أوبتي سموث  •  🎨 صبغة  •  🖌️ هايلايت\n\n💅 منكير (عادي / سبا / رويال)\n🦶 بدكير (عادي / سبا / رويال)\n💆 مساج القدم\n✨ فيشل  •  🌟 بروفيشنال',
     book:     '📲 واتساب للحجز:\n97339777136+\n\n' + WALINK + '\n\n✅ الزيارة المباشرة مرحب بها!',
     welcome:  'أهلاً! 👋 مرحباً بك في ذا باربر شوب.\nاضغط للحصول على المعلومات:',
