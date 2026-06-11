@@ -56,7 +56,7 @@ const SERVICES = [
 ];
 
 const HOURS = [
-  { day: 'Monday to Sunday',    hours: '24 Hours' },
+
  
 ];
 
