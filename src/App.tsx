@@ -281,7 +281,7 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
                 <span style={{ color: B.white, textShadow: `0 0 30px rgba(255,255,255,0.15)` }}>SHOP & SPA</span>
               </div>
               <div className="mt-4 text-[11px] tracking-[0.45em] uppercase font-bold" style={{ color: B.goldDark }}>
-                Men's Grooming · Qatar · Qatar
+                Men's Grooming · Qatar 
               </div>
               <div className="flex items-center gap-3 justify-center mt-5">
                 <div className="h-px flex-1" style={{ background: `linear-gradient(90deg, transparent, ${B.gold}70, transparent)` }} />
@@ -1128,7 +1128,7 @@ export default function App() {
                   <div className="text-[10px] tracking-[0.3em] uppercase mb-5 font-bold" style={{ color: B.goldDark }}>Men's Grooming · Qatar</div>
                   <p className="text-zinc-500 text-sm leading-relaxed">{t('Tagline')}</p>
                   <div className="flex gap-3 mt-6">
-                    <a href="https://www.instagram.com/thebarbershop.bh" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/salon_shabab_beirut" target="_blank" rel="noopener noreferrer"
                       className="w-9 h-9 rounded-full flex items-center justify-center hover:scale-110 transition-all"
                       style={{ background: 'rgba(184,134,11,0.08)', border: `1px solid ${B.border}` }}>
                       <Instagram className="w-4 h-4" style={{ color: B.gold }} />
