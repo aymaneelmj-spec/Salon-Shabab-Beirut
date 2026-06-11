@@ -115,7 +115,7 @@ function LoadingScreen({ isRTL }: { isRTL: boolean }) {
             <img src="/gallery/logo.webp" alt="Logo" className="w-44 h-44 object-contain"
               onError={e => {
                 const img = e.target as HTMLImageElement;
-                img.src = '/gallery/logo.png';
+                img.src = '/gallery/logoo.png';
                 img.onerror = () => { img.style.display = 'none'; };
               }} />
           </motion.div>
@@ -126,10 +126,10 @@ function LoadingScreen({ isRTL }: { isRTL: boolean }) {
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.7 }} className="mt-8 text-center">
         <div className="text-3xl md:text-4xl font-black tracking-[0.18em] mb-1" style={{ color: B.white }}>
-          <span style={{ color: B.gold }}>THE BARBER </span>SHOP & SPA
+          <span style={{ color: B.gold }}>THE BARBER </span>Salon Shabab Beirut
         </div>
         <div className="text-[10px] tracking-[0.5em] uppercase font-bold mt-1" style={{ color: B.goldDark }}>
-          Busaiteen · Bahrain
+          Qatar
         </div>
       </motion.div>
       <motion.div className="mt-8 h-[2px] rounded-full overflow-hidden"
@@ -206,7 +206,7 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0" style={{ background: B.bg }} />
         <motion.img
-          src="/gallery/2.webp" alt="bg"
+          src="/gallery/mainBackground.webp" alt="bg"
           className="absolute inset-0 w-full h-full object-cover"
           style={{
             objectPosition: 'center 30%',
@@ -220,7 +220,7 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
           onError={e => {
             const img = e.target as HTMLImageElement;
             if (img.src.endsWith('.webp')) { img.src = '/gallery/2.jpg'; return; }
-            img.src = '/gallery/1.jpg';
+            img.src = '/gallery/3.jpg';
             img.onerror = () => { setImgLoaded(true); img.style.display = 'none'; };
             setImgLoaded(true);
           }}
@@ -424,7 +424,7 @@ function ServicesSection({ isRTL }: { isRTL: boolean }) {
                 {isRTL ? 'قائمة الأسعار' : 'Pricelist'}
               </div>
               <div className="text-[11px] tracking-widest mt-1" style={{ color: 'rgba(255,255,255,0.28)' }}>
-                {isRTL ? 'الأسعار تقريبية بالدينار البحريني' : 'Approximate prices in Bahraini Dinar (BD)'}
+                {isRTL ? 'الأسعار تقريبية QAR' : 'Approximate prices in QAR'}
               </div>
             </div>
             <AnimatePresence mode="wait">
@@ -949,7 +949,7 @@ export default function App() {
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     onError={e => {
                       const img = e.target as HTMLImageElement;
-                      img.src = '/gallery/2.jpg';
+                      img.src = '/gallery/mainBackground.jpg';
                       img.onerror = () => { img.style.display = 'none'; };
                     }} />
                 </div>
@@ -1112,8 +1112,8 @@ export default function App() {
                   </span>
                   <div className="text-sm text-center whitespace-pre-line" style={{ color: B.silver }}>
                     {isRTL
-                      ? 'الإثنين–الأربعاء: 10ص–10م\nالخميس–الجمعة: 10ص–11م\nالسبت–الأحد: 10ص–10م'
-                      : 'Mon–Wed: 10 AM–10 PM\nThu–Fri: 10 AM–11 PM\nSat–Sun: 10 AM–10 PM'}
+                      ? 'الإثنين - لأحد: 24 H'
+                      : 'Mon–Sun: 24 Hours'}
                   </div>
                 </motion.div>
               </div>

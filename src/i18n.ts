@@ -15,7 +15,7 @@ i18n.use(initReactI18next).init({
         FAQ:            'FAQ',
 
         /* ── Hero ── */
-        Tagline:        'Premium haircuts, shaves, facials & spa treatments — all under one roof in Busaiteen, Bahrain.',
+        Tagline:        'Premium haircuts, shaves, facials & spa treatments — all under one roof in Doha, Qatar.',
         BookNow:        'Book on WhatsApp',
 
         /* ── Contact / Footer ── */
@@ -34,17 +34,17 @@ i18n.use(initReactI18next).init({
         Sunday:         'Sunday',
 
         /* ── Chat ── */
-        ChatWelcome:    'Welcome to The Barber Shop and Spa! 👋\nHow can I help you today? Ask about our services, prices, or book an appointment via WhatsApp.',
+        ChatWelcome:    'Welcome to Salon Shabab Beirut! 👋\nHow can I help you today? Ask about our services, prices, or book an appointment via WhatsApp.',
 
         /* ── FAQ ── */
         FaqQ1: 'Where are you located?',
-        FaqA1: 'We are inside Alsayh Centre, 2811 Busaiteen / Al Sayh, Bahrain. You can find us easily on Google Maps.',
+        FaqA1: 'We are inside Alsayh Centre, وسط المدينة، بن عمران، طارق, Doha, Qatar. You can find us easily on Google Maps.',
 
         FaqQ2: 'Do I need to book in advance?',
-        FaqA2: 'Walk-ins are welcome, but we recommend booking via WhatsApp (+973 3977 7136) to secure your preferred time slot.',
+        FaqA2: 'Walk-ins are welcome, but we recommend booking via WhatsApp (+974 7767 1789) to secure your preferred time slot.',
 
         FaqQ3: 'What are your opening hours?',
-        FaqA3: 'We are open every day: Monday to Wednesday & Saturday to Sunday 10 AM – 10 PM, Thursday & Friday 10 AM – 11 PM.',
+        FaqA3: 'We are open every day: Monday to Wednesday & Saturday to Sunday 24 HOURS',
 
         FaqQ4: 'What services do you offer?',
         FaqA4: 'We offer a full range of men\'s grooming and spa services including haircuts, shaves, hair colouring, facials, manicure, pedicure, foot massage, and more. Check our pricelist for the full menu.',
@@ -65,7 +65,7 @@ i18n.use(initReactI18next).init({
 
         /* ── Contact / Footer ── */
         Contact:        'تواصل معنا',
-        Address:        'مركز الصايح، 2811 البسيتين / الصايح، البحرين',
+        Address:        'وسط المدينة، بن عمران، طارق, Doha, Qatar',
         Hours:          'ساعات العمل',
         Opening_Hours:  'مفتوح 7 أيام في الأسبوع',
 
@@ -79,14 +79,14 @@ i18n.use(initReactI18next).init({
         Sunday:         'الأحد',
 
         /* ── Chat ── */
-        ChatWelcome:    'مرحباً بك في ذا باربر شوب آند سبا! 👋\nكيف يمكنني مساعدتك؟ اسأل عن خدماتنا وأسعارنا أو احجز موعدك عبر واتساب.',
+        ChatWelcome:    'مرحباً بك في صالون شباب بيروت! 👋\nكيف يمكنني مساعدتك؟ اسأل عن خدماتنا وأسعارنا أو احجز موعدك عبر واتساب.',
 
         /* ── FAQ ── */
         FaqQ1: 'أين يقع المحل؟',
         FaqA1: 'نقع داخل مركز الصايح، 2811 البسيتين / الصايح، البحرين. يمكنك إيجادنا بسهولة على خرائط جوجل.',
 
         FaqQ2: 'هل يجب الحجز مسبقاً؟',
-        FaqA2: 'نرحب بالزيارات المباشرة، لكن ننصح بالحجز عبر واتساب (+973 3977 7136) لضمان الوقت المناسب لك.',
+        FaqA2: 'نرحب بالزيارات المباشرة، لكن ننصح بالحجز عبر واتساب (+974 7767 1789) لضمان الوقت المناسب لك.',
 
         FaqQ3: 'ما هي ساعات العمل؟',
         FaqA3: 'نعمل يومياً: من الإثنين إلى الأربعاء ومن السبت إلى الأحد من 10 ص حتى 10 م، والخميس والجمعة من 10 ص حتى 11 م.',
