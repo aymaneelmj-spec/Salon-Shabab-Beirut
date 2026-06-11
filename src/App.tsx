@@ -444,7 +444,7 @@ function ServicesSection({ isRTL }: { isRTL: boolean }) {
                     <div className="flex-1 mx-5 min-w-0" style={{ borderBottom: `1px dotted rgba(184,134,11,0.14)`, marginTop: '-2px' }} />
                     <div className="flex items-baseline gap-1.5 relative z-10">
                       <span className="font-black text-xl tabular-nums" style={{ color: B.gold, textShadow: `0 0 12px ${B.gold}50` }}>{svc.price}</span>
-                      <span className="text-[10px] font-bold tracking-wider" style={{ color: 'rgba(184,134,11,0.5)' }}>BD</span>
+                      <span className="text-[10px] font-bold tracking-wider" style={{ color: 'rgba(184,134,11,0.5)' }}>QAR</span>
                     </div>
                   </motion.div>
                 ))}
