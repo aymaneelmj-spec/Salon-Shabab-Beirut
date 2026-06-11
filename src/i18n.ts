@@ -20,7 +20,7 @@ i18n.use(initReactI18next).init({
 
         /* ── Contact / Footer ── */
         Contact:        'Contact',
-        Address:        'Alsayh Centre, 2811 Busaiteen / Al Sayh, Bahrain',
+        Address:        'وسط المدينة، بن عمران، طارق, Doha, Qatar',
         Hours:          'Opening Hours',
         Opening_Hours:  'Open 7 Days a Week',
 
