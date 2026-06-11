@@ -110,7 +110,7 @@ function LoadingScreen({ isRTL }: { isRTL: boolean }) {
             <img src="/gallery/logo.webp" alt="Logo" className="w-44 h-44 object-contain"
               onError={e => {
                 const img = e.target as HTMLImageElement;
-                img.src = '/gallery/logo.png';
+                img.src = '/gallery/logo.jpg';
                 img.onerror = () => { img.style.display = 'none'; };
               }} />
           </motion.div>
@@ -121,7 +121,7 @@ function LoadingScreen({ isRTL }: { isRTL: boolean }) {
       <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.7 }} className="mt-8 text-center">
         <div className="text-3xl md:text-4xl font-black tracking-[0.18em] mb-1" style={{ color: B.white }}>
-          <span style={{ color: B.gold }}>THE BARBER </span>Salon Shabab Beirut
+          <span style={{ color: B.gold }}>        </span>Salon Shabab Beirut
         </div>
         <div className="text-[10px] tracking-[0.5em] uppercase font-bold mt-1" style={{ color: B.goldDark }}>
           Qatar
@@ -214,7 +214,7 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
           onLoad={() => setImgLoaded(true)}
           onError={e => {
             const img = e.target as HTMLImageElement;
-            if (img.src.endsWith('.webp')) { img.src = '/gallery/2.jpg'; return; }
+            if (img.src.endsWith('.webp')) { img.src = '/gallery/3.jpg'; return; }
             img.src = '/gallery/3.jpg';
             img.onerror = () => { setImgLoaded(true); img.style.display = 'none'; };
             setImgLoaded(true);
@@ -272,8 +272,8 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
                 <div className="h-px flex-1" style={{ background: `linear-gradient(90deg, transparent, ${B.gold}70, transparent)` }} />
               </div>
               <div className="text-sm md:text-base font-black mb-3 leading-none" style={{ direction: 'rtl', color: B.silver, letterSpacing: '0.08em' }}>
-                <span style={{ color: B.goldGlow, textShadow: `0 0 22px ${B.gold}90` }}>ذا باربر شوب </span>
-                <span style={{ color: B.white }}>آند سبا · البحرين</span>
+                <span style={{ color: B.goldGlow, textShadow: `0 0 22px ${B.gold}90` }}>Salon Shabab Beirut</span>
+                <span style={{ color: B.white }}>Qatar, Doha</span>
               </div>
               <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-[0.08em] leading-none" style={{ fontFamily: '"Playfair Display", serif' }}>
                 <span style={{ color: B.gold, textShadow: `0 0 40px ${B.gold}, 0 0 80px ${B.goldDark}80` }}>THE BARBER</span>
@@ -281,7 +281,7 @@ function HeroSection({ isRTL }: { isRTL: boolean }) {
                 <span style={{ color: B.white, textShadow: `0 0 30px rgba(255,255,255,0.15)` }}>SHOP & SPA</span>
               </div>
               <div className="mt-4 text-[11px] tracking-[0.45em] uppercase font-bold" style={{ color: B.goldDark }}>
-                Men's Grooming · Busaiteen · Bahrain
+                Men's Grooming · Qatar · Qatar
               </div>
               <div className="flex items-center gap-3 justify-center mt-5">
                 <div className="h-px flex-1" style={{ background: `linear-gradient(90deg, transparent, ${B.gold}70, transparent)` }} />
@@ -621,8 +621,8 @@ const REVIEWS_DATA = [
   { name: "Mohammed Al Khalifa", text: "One of the cleanest and most professional barber shops in QATAR. Booking through WhatsApp was very easy and the haircut was perfect.", ar: "من أنظف وأكثر محلات الحلاقة احترافية في البحرين. الحجز عبر واتساب كان سهلاً جداً وقصة الشعر كانت مثالية.", stars: 5, time: "3 weeks ago" },
   { name: "Yousef Al Zayani",   text: "Honestly the best fade I've had in years. The team is respectful, fast, and very professional. Definitely coming back again.", ar: "صراحةً أفضل فيد حصلت عليه منذ سنوات. الفريق محترم وسريع ومهني جداً. سأعود حتماً.", stars: 5, time: "a month ago" },
   { name: "Khalid Al Mannai",   text: "Luxury atmosphere and excellent customer service. The barber understood exactly what I wanted and delivered beyond expectations.", ar: "أجواء فاخرة وخدمة عملاء ممتازة. الحلاق فهم بالضبط ما أريده وتجاوز التوقعات.", stars: 5, time: "2 weeks ago" },
-  { name: "Omar Al Hayki",      text: "Very classy place with experienced barbers. Clean tools, modern style, and great hospitality. Highly recommended in Bahrain.", ar: "مكان راقي جداً مع حلاقين ذوي خبرة. أدوات نظيفة وأسلوب عصري وضيافة رائعة. أنصح به بشدة في البحرين.", stars: 5, time: "4 months ago" },
-  { name: "Abdullah Al Noaimi", text: "I tried many barber shops in Bahrain and this one stands out. Professional staff and premium quality service.", ar: "جربت محلات حلاقة كثيرة في البحرين وهذا يتميز. طاقم احترافي وخدمة عالية الجودة.", stars: 5, time: "5 months ago" },
+  { name: "Omar Al Hayki",      text: "Very classy place with experienced barbers. Clean tools, modern style, and great hospitality. Highly recommended in Qatar.", ar: "مكان راقي جداً مع حلاقين ذوي خبرة. أدوات نظيفة وأسلوب عصري وضيافة رائعة. أنصح به بشدة في Qatar.", stars: 5, time: "4 months ago" },
+  { name: "Abdullah Al Noaimi", text: "I tried many barber shops in Qatar and this one stands out. Professional staff and premium quality service.", ar: "جربت محلات حلاقة كثيرة في البحرين وهذا يتميز. طاقم احترافي وخدمة عالية الجودة.", stars: 5, time: "5 months ago" },
   { name: "Faisal Al Rumaihi",  text: "Amazing beard trim and haircut. The barber was patient and very precise with details. Great experience overall.", ar: "تشذيب لحية ممتاز وقصة شعر رائعة. الحلاق كان صبوراً ودقيقاً جداً بالتفاصيل. تجربة رائعة بشكل عام.", stars: 5, time: "a month ago" },
   { name: "Rakan Al Isa",       text: "The interior design is beautiful and relaxing. Staff are friendly and the service feels premium from the moment you enter.", ar: "التصميم الداخلي جميل ومريح. الموظفون ودودون والخدمة تبدو متميزة منذ اللحظة التي تدخل فيها.", stars: 5, time: "3 months ago" },
   { name: "Majed Al Sayed",     text: "Professional team and excellent hygiene standards. Easily one of the top barber shops in the country.", ar: "فريق احترافي ومعايير نظافة ممتازة. بكل سهولة أحد أفضل محلات الحلاقة في المملكة.", stars: 5, time: "2 months ago" },
@@ -739,7 +739,7 @@ type Msg = { from: 'bot' | 'user'; text: string };
 
 const INFO = {
   en: {
-    address:  '📍 Alsayh Centre, Busaiteen — Bahrain\n\n' + MAPS_URL,
+    address:  '📍 Alsayh Centre, Busaiteen — Qatar\n\n' + MAPS_URL,
     phone:    '📞 +973 3977 7136\n💬 ' + WALINK,
     hours:    '🕙 Mon – Sun\n    24 HOURS',
     prices:   '✂️ Haircut 2.5  •  🪒 Beard 1.5  •  🚿 Wash 2 QAR\n💨 Drying from 4  •  ✨ Protein from 15\n💎 Opti Smooth from 35  •  🎨 Dye from 8\n🖌️ Highlights from 18  •  🧴 Mask from 4\n\n💅 Manicure 3  •  🦶 Pedicure 4\n🛁 Spa Mani 4  •  🧖 Spa Pedi 5\n👑 Royal Mani 5  •  👑 Royal Pedi 6\n💆 Foot Massage 1\n\n✨ Facial 5  •  🌟 Pro Facial 8 QAR',
@@ -944,7 +944,7 @@ export default function App() {
                     className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
                     onError={e => {
                       const img = e.target as HTMLImageElement;
-                      img.src = '/gallery/mainBackground.jpg';
+                      img.src = '/gallery/mainBackground.webp';
                       img.onerror = () => { img.style.display = 'none'; };
                     }} />
                 </div>
@@ -953,7 +953,7 @@ export default function App() {
                     <span style={{ color: B.gold }}>THE BARBER </span>
                     <span style={{ color: B.white }}>SHOP & SPA</span>
                   </div>
-                  <div className="text-[9px] tracking-[0.22em] uppercase font-bold" style={{ color: B.goldDark }}>Busaiteen · Bahrain</div>
+                  <div className="text-[9px] tracking-[0.22em] uppercase font-bold" style={{ color: B.goldDark }}>Doha · Qatar</div>
                 </div>
               </div>
 
@@ -1123,9 +1123,9 @@ export default function App() {
                 <div>
                   <div className="text-xl font-black tracking-[0.1em] mb-1" style={{ fontFamily: '"Playfair Display", serif' }}>
                     <span style={{ color: B.gold }}>THE BARBER </span>
-                    <span style={{ color: B.white }}>SHOP & SPA</span>
+                    <span style={{ color: B.white }}>SHOP</span>
                   </div>
-                  <div className="text-[10px] tracking-[0.3em] uppercase mb-5 font-bold" style={{ color: B.goldDark }}>Men's Grooming · Bahrain</div>
+                  <div className="text-[10px] tracking-[0.3em] uppercase mb-5 font-bold" style={{ color: B.goldDark }}>Men's Grooming · Qatar</div>
                   <p className="text-zinc-500 text-sm leading-relaxed">{t('Tagline')}</p>
                   <div className="flex gap-3 mt-6">
                     <a href="https://www.instagram.com/thebarbershop.bh" target="_blank" rel="noopener noreferrer"
@@ -1175,7 +1175,7 @@ export default function App() {
               </div>
               <div className="pt-8 text-center text-xs text-zinc-700"
                 style={{ borderTop: `1px solid rgba(184,134,11,0.06)` }}>
-                © {new Date().getFullYear()} The Barber Shop and Spa — Bahrain. All rights reserved.
+                © {new Date().getFullYear()} Salon Shabab Beirut — Qatar. All rights reserved.
               </div>
             </div>
           </footer>
